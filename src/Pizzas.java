@@ -1,46 +1,121 @@
-import java.util.ArrayList;
-
 public class Pizzas {
-    String masa;
-    Boolean relleno;
-    Integer tipo;
-    Boolean salsa;
-    String tipoSalsa;
-    Boolean cebolla;
-    Boolean sinGluten;
-    Boolean extraQueso;
-    Boolean piña;
-    Boolean champiñones;
-    Boolean jamon;
+    private String masa = "Normal";
+    private Boolean relleno = true;
+    private Integer tipo = 2;
+    private Boolean salsa = true;
+    private String tipoSalsa = "tomate";
+    private Boolean cebolla = false;
+    private Boolean sinGluten = false;
+    private Boolean extraQueso = false;
+    private Boolean piña = false;
+    private Boolean champiñones = false;
+    private Boolean jamon = false;
 
-    Pizzas(String masa, Boolean relleno, Integer tipo, Boolean salsa, String tipoSalsa, Boolean cebolla, Boolean sinGluten, Boolean extraQueso, Boolean piña, Boolean champiñones, Boolean jamon) {
+
+
+
+    public String getMasa() {
+        return masa;
+    }
+
+    public void setMasa(String masa) {
         this.masa = masa;
+    }
+
+    public Boolean getRelleno() {
+        return relleno;
+    }
+
+    public void setRelleno(Boolean relleno) {
         this.relleno = relleno;
+    }
+
+    public Integer getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(Integer tipo) {
         this.tipo = tipo;
+    }
+
+    public Boolean getSalsa() {
+        return salsa;
+    }
+
+    public void setSalsa(Boolean salsa) {
         this.salsa = salsa;
+    }
+
+    public String getTipoSalsa() {
+        return tipoSalsa;
+    }
+
+    public void setTipoSalsa(String tipoSalsa) {
         this.tipoSalsa = tipoSalsa;
+    }
+
+    public Boolean getCebolla() {
+        return cebolla;
+    }
+
+    public void setCebolla(Boolean cebolla) {
         this.cebolla = cebolla;
+    }
+
+    public Boolean getSinGluten() {
+        return sinGluten;
+    }
+
+    public void setSinGluten(Boolean sinGluten) {
         this.sinGluten = sinGluten;
+    }
+
+    public Boolean getExtraQueso() {
+        return extraQueso;
+    }
+
+    public void setExtraQueso(Boolean extraQueso) {
         this.extraQueso = extraQueso;
+    }
+
+    public Boolean getPiña() {
+        return piña;
+    }
+
+    public void setPiña(Boolean piña) {
         this.piña = piña;
+    }
+
+    public Boolean getChampiñones() {
+        return champiñones;
+    }
+
+    public void setChampiñones(Boolean champiñones) {
         this.champiñones = champiñones;
+    }
+
+    public Boolean getJamon() {
+        return jamon;
+    }
+
+    public void setJamon(Boolean jamon) {
         this.jamon = jamon;
     }
 
-    public String getPizza() {
-        ArrayList<String> pizza = new ArrayList<>();
-        pizza.add("Tipo de masa: " + this.masa);
-        pizza.add("Relleno: " + this.relleno.toString());
-        pizza.add("Tamaño de la pizza: " + this.tipo.toString());
-        pizza.add("Salsa: " + this.salsa.toString());
-        pizza.add("Tipo de salsa: " + this.tipoSalsa);
-        pizza.add("Cebolla: " + this.cebolla.toString());
-        pizza.add("Gluten: " + this.sinGluten.toString());
-        pizza.add("Extra de queso: " + this.extraQueso.toString());
-        pizza.add("Piña: " + this.piña.toString());
-        pizza.add("Champiñones: " + this.champiñones.toString());
-        pizza.add("Jamón: " + this.jamon.toString());
-
-        return String.join(", ", pizza);
+    @Override
+    public String toString() {
+        return "Pizzas{" +
+                "masa='" + masa + '\'' +
+                ", relleno=" + relleno +
+                ", tipo=" + tipo +
+                ", salsa=" + salsa +
+                ", tipoSalsa='" + tipoSalsa + '\'' +
+                ", cebolla=" + cebolla +
+                ", sinGluten=" + sinGluten +
+                ", extraQueso=" + extraQueso +
+                ", piña=" + piña +
+                ", champiñones=" + champiñones +
+                ", jamon=" + jamon +
+                '}';
     }
 }

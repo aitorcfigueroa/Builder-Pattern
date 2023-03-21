@@ -1,6 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        Pizzas pizza = new Pizzas("normal", false, 2, true, "solo tomate", false, false, true, false, false, true);
-        System.out.println(pizza.getPizza());
+        Pizzas pizzaJamonyqueso = PizzaBuilder.pizza()
+                .jamon(true)
+                .build();
+
+        Pizzas pizzaHawaiana = PizzaBuilder.pizza()
+                .jamon(true)
+                .piña(true)
+                .build();
+
+        System.out.println(pizzaJamonyqueso.toString());
+        System.out.println(pizzaHawaiana.toString());
     }
 }
