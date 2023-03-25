@@ -11,9 +11,6 @@ public class Pizzas {
     private Boolean champiñones = false;
     private Boolean jamon = false;
 
-
-
-
     public String getMasa() {
         return masa;
     }
