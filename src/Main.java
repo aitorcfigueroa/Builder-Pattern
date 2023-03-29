@@ -1,6 +1,4 @@
 public class Main {
-    Pizzas pizzaJamonyqueso;
-    Pizzas pizzaHawaiana;
     public static void main(String[] args) {
         Pizzas pizzaJamonyqueso = PizzaBuilder.pizza()
                 .jamon(true)
